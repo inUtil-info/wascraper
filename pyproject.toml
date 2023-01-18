@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "wa_scraper_py"
+name = "wa_scraper"
 version = "0.0.1"
 authors = [
   { name="inutil labs", email="info@inutil.info" },
@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/inUtil-info/wa_scraper_py"
-"Bug Tracker" = "https://github.com/inUtil-info/wa_scraper_py/issues"
+"Homepage" = "https://github.com/inUtil-info/wa_scraper"
+"Bug Tracker" = "https://github.com/inUtil-info/wa_scraper/issues"
