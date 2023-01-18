@@ -36,7 +36,7 @@ This function will take phone number and apikey as input and shall return a true
 
 This function will take phone number and apikey as input and shall return a json object with the information the phone owner entered as business informatino details for the account like, e.g., opening times.
 
-** wa_profilepic(phone, apikey,pictype="url", quality="high")**
+**wa_profilepic(phone, apikey,pictype="url", quality="high")**
 
 This function will take phone number and apikey as input, together with two optional parameters:
  - pictype choices are; "url", "png" and "base64". This will determine the data type the function will return.
