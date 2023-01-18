@@ -1,3 +1,22 @@
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[project]
+name = "wa-scraper-py"
+version = "0.0.1"
+authors = [
+  { name="inutil labs", email="info@inutil.info" },
+]
+description = "python functions to access whatsapp scraper"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/inUtil-info/wa-scraper-py"
+"Bug Tracker" = "https://github.com/inUtil-info/wa-scraper-py/issues"
