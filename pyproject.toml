@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "wa-scraper-py"
+name = "wascraper"
 version = "0.0.1"
 authors = [
   { name="inutil labs", email="info@inutil.info" },
