@@ -1,7 +1,7 @@
 import requests
 
 # refustered function returns a boolean value
-def WSP_registered(phone, apikey):
+def wa_registered(phone, apikey):
     url = "https://whatsapp-scraper.p.rapidapi.com/wchk"        
     querystring = {"phone":phone}
     headers = {
@@ -11,7 +11,7 @@ def WSP_registered(phone, apikey):
     return bool(requests.request("GET", url, headers=headers, params=querystring).json())
 
 # about function returns a json object
-def WSP_about(phone, apikey):
+def wa_about(phone, apikey):
     url = "https://whatsapp-scraper.p.rapidapi.com/about"        
     querystring = {"phone":phone}
     headers = {
@@ -21,7 +21,7 @@ def WSP_about(phone, apikey):
     return requests.request("GET", url, headers=headers, params=querystring).json()
 
 # Isbiz returns a boolean value
-def WSP_isbiz(phone, apikey):
+def wa_isbiz(phone, apikey):
     url = "https://whatsapp-scraper.p.rapidapi.com/isbiz"        
     querystring = {"phone":phone}
     headers = {
@@ -31,7 +31,7 @@ def WSP_isbiz(phone, apikey):
     return bool(requests.request("GET", url, headers=headers, params=querystring).json())
 
 # Bizinfo returns a json object
-def WSP_bizinfo(phone, apikey):
+def wa_bizinfo(phone, apikey):
     url = "https://whatsapp-scraper.p.rapidapi.com/bizinfo"        
     querystring = {"phone":phone}
     headers = {
@@ -42,7 +42,7 @@ def WSP_bizinfo(phone, apikey):
 
 # Valid values for pictype are 'url', 'base64' and 'png'.
 # Valid values for quality are 'high' and 'low'
-def WSP_profilepic(phone, apikey,pictype="url", quality="high"):
+def wa_profilepic(phone, apikey,pictype="url", quality="high"):
     url = "https://whatsapp-scraper.p.rapidapi.com/wspicture"        
     querystring = {"phone":phone,"pictype":pictype,"quality":quality}
     headers = {
