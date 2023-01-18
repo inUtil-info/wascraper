@@ -1,18 +1,19 @@
 # wa-scraper-py
-## Python functions for using rapidapi's whatsapp scraper
+## Python functions for using inUtil Labs' whatsapp scraper
 
 ### Overview
-wa-scraper-py is a simple implementation for calling rapidapi's wa-scraper service from your python code in a very simple way.
-You must be subscribed to the service before at https://rapidapi.com/inutil-inutil-default/api/whatsapp-scraper/ and obtain your apikey.
-If you want to test the API before subscribing, use rapidAPI's frontend to discover the free endpoints and to get your temporary token.
+wa-scraper-py is a set python libraries for using inUtil Labs' whatsapp-scraper service from your python code, in a very simple way.
+You can test its funcionality for free before using the libraries [here](https://rapidapi.com/inutil-inutil-default/api/whatsapp-scraper/). For production use, you must become a subscriber (supporter) of the service and obtain a valid apikey.
 
-This library will work only against the endpoints for subscribed users. Feel free to amend the code to include the token parameter if you need to run free tests from your code.
+You are encouraged to test the service before moving to a paid subscription, use the [playground](https://rapidapi.com/inutil-inutil-default/api/whatsapp-scraper/) to discover the features behind the free endpoints (do not forget to ask for a temporary token).
+
+The libraries are designed to be used by subscribers on paid plans; but feel free to fork the repo and amend the code to include the temp-token parameter if you wish to run tests from within your code.
 
 ### About phone numbers
-Please ensure you use the right format, that is, including country code but without the + sign before it (e.g, 34605797764)
+Please make sure you use the right format, as Whatsapp is expecting you include the country code without the + sign before it (e.g, 34605797764)
 Remove hyphens, dashes and trim spaces before feeding phone numbers.
 
-**Not valid phone formats**
+**these are some examples of NOT valid phone formats**
 +34605797764
 (34) 34605797764
 34-605 797 764
