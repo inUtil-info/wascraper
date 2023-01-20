@@ -1,2 +1,3 @@
-from setuptools import setupif __name__ == '__main__':
+from setuptools import setup
+if __name__ == '__main__':
  setup()
