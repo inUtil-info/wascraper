@@ -9,6 +9,24 @@ You are encouraged to test the service before moving to a paid subscription, use
 
 The libraries are designed to be used by subscribers on paid plans; but feel free to fork the repo and amend the code to include the temp-token parameter if you wish to run tests from within your code.
 
+
+### Installing and iporting wascraper
+
+1.- Clone this repository locally:
+
+    ```git clone https://github.com/inUtil-info/wascraper.git```
+    
+2.- Install the package with pip or pip3
+
+    ```pip3 install -e path/to/wascraper```
+    
+3.- Import wascraper in your python code
+
+   ```from  wascraper import *```
+   
+  
+
+
 ### About phone numbers
 Please make sure you use the right format, as Whatsapp is expecting you include the country code without the + sign before it (e.g, 34605797764)
 Remove hyphens, dashes and trim spaces before feeding phone numbers.
