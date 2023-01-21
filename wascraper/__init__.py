@@ -1,1 +1,1 @@
-#nothing here
+from wascraper.wascraper import *
