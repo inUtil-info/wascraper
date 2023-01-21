@@ -1,4 +1,4 @@
-# wa_scraper
+# wascraper
 ## Python functions for using inUtil Labs' whatsapp scraper
 
 ### Overview
