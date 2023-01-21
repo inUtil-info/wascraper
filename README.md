@@ -14,15 +14,21 @@ The libraries are designed to be used by subscribers on paid plans; but feel fre
 
 1.- Clone this repository locally:
 
-    ```git clone https://github.com/inUtil-info/wascraper.git```
+    ```
+    git clone https://github.com/inUtil-info/wascraper.git
+    ```
     
 2.- Install the package with pip or pip3
 
-    ```pip3 install -e path/to/wascraper```
+    ```
+    pip3 install -e path/to/wascraper
+    ```
     
 3.- Import wascraper in your python code
 
-   ```from  wascraper import *```
+   ```
+   from  wascraper import *
+   ```
    
   
 
