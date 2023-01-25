@@ -75,6 +75,12 @@ Caling examples:
   wa_profilepic(34605797764,<yourapikey>,"base64","high").text will be the base64 coded image in string format.
   wa_profilepic(34605797764,<yourapikey>,"png","high") will return a response object that contains an image buffer on the payload
 
+**wa_picobj(phone, apikey)**
+
+This function recieves the phone to scrap and your apikey and returs a json object listing the objects found in the profile picture of the whatsapp number
+The output will be a json object with the list of objects found with the following format:
+
+[{object:"dog", confidence:99.56}, {object:"person", confidence:98.34}]
 
 
 
