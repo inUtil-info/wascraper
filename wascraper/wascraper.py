@@ -42,22 +42,15 @@ def wa_bizinfo(phone, apikey):
 
 # Valid values for pictype are 'url', 'base64' and 'png'.
 # Valid values for quality are 'high' and 'low'
-def wa_profilepic(phone, apikey,pictype="url", quality="high"):
-    url = "https://whatsapp-scraper.p.rapidapi.com/wspicture"        
-    querystring = {"phone":phone,"pictype":pictype,"quality":quality}
+def wa_picobj(phone, apikey):
+    url = "https://whatsapp-scraper.p.rapidapi.com/wspicobj"
+    querystring= {"phone":phone}
     headers = {
-	    "X-RapidAPI-Key": apikey,
-	    "X-RapidAPI-Host": "whatsapp-scraper.p.rapidapi.com"
+        "X-RapidAPI-Key": apikey,
+        "X-RapidAPI-Host": "whatsapp-scraper.p.rapidapi.com"
     }
-    return requests.request("GET", url, headers=headers, params=querystring)
+    return requests.request("GET", url, headers=headers, params=querystring).json()
 
 
 # wa_picobj receives the phone to scrap and your apikey and returs a json object listing the objects found in the profile picture of the whatsapp number
-def wa_picobj(phone, apikey):
-    url = "https://whatsapp-scraper.p.rapidapi.com/wspicobj"        
-    querystring= {"phone":phone}
-    headers = {
-	    "X-RapidAPI-Key": apikey,
-	    "X-RapidAPI-Host": "whatsapp-scraper.p.rapidapi.com"
-    }
-    return requests.request("GET", url, headers=headers, params=querystring).json()
+
