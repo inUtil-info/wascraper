@@ -19,7 +19,7 @@ You are encouraged to test the service before moving to a paid subscription, use
 2.- Install the package with pip or pip3
 
     ```
-    pip3 install -e path/to/wascraper
+    pip3 install path/to/wascraper
     ```
     
 3.- Import wascraper in your python code
