@@ -12,21 +12,21 @@ You are encouraged to test the service before moving to a paid subscription, use
 
 1.- Clone this repository locally:
 
-    ```
+```
     git clone https://github.com/inUtil-info/wascraper.git
-    ```
+```
     
 2.- Install the package with pip or pip3
 
-    ```
+```
     pip3 install path/to/wascraper
-    ```
+```
     
 3.- Import wascraper in your python code
 
-   ```
+```
    from  wascraper import *
-   ```
+```
    
   
 
