@@ -7,8 +7,6 @@ You can test its funcionality for free before using the libraries [here](https:/
 
 You are encouraged to test the service before moving to a paid subscription, use the [playground](https://rapidapi.com/inutil-inutil-default/api/whatsapp-scraper/) to discover the features behind the free endpoints (do not forget to ask for a temporary token).
 
-The libraries are designed to be used by subscribers on paid plans; but feel free to fork the repo and amend the code to include the temp-token parameter if you wish to run tests from within your code.
-
 
 ### Installing and iporting wascraper
 
