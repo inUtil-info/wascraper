@@ -2,7 +2,7 @@
 ## Python functions for using inUtil Labs' whatsapp scraper
 
 ### Overview
-wa-scraper-py is a set python libraries for using inUtil Labs' whatsapp-scraper service from your python code, in a very simple way.
+wa-scraper-py is a set python functions for using inUtil Labs' whatsapp-scraper service from your python code, in a very simple way.
 You can test its funcionality for free before using the libraries [here](https://rapidapi.com/inutil-inutil-default/api/whatsapp-scraper/). For production use, you must become a subscriber (supporter) of the service and obtain a valid apikey.
 
 You are encouraged to test the service before moving to a paid subscription, use the [playground](https://rapidapi.com/inutil-inutil-default/api/whatsapp-scraper/) to discover the features behind the free endpoints (do not forget to ask for a temporary token).
