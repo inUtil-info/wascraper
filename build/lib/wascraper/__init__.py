@@ -1,1 +1,0 @@
-from wascraper.wascraper import *
