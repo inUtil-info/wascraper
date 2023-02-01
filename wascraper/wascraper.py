@@ -55,7 +55,7 @@ def wa_profilepic(phone, apikey,pictype="url", quality="high"):
 
 
 # wa_picobj receives the phone to scrap and your apikey and returs a json object listing the objects found in the profile picture of the whatsapp number
-    def wa_picobj(phone, apikey):
+def wa_picobj(phone, apikey):
     url = "https://whatsapp-scraper.p.rapidapi.com/wspicobj"        
     querystring= {"phone":phone}
     headers = {
