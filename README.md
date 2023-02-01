@@ -67,11 +67,11 @@ This function will take phone number and apikey as input, together with two opti
 
 Calling examples:
 
-  wa_profilepic(34605797764,<yourapikey>,"url","low") will return a response object
-  wa_profilepic(34605797764,<yourapikey>,"url","high").text will be the url in string format 
-  wa_profilepic(34605797764,<yourapikey>,"base64","high") will return a response object
-  wa_profilepic(34605797764,<yourapikey>,"base64","high").text will be the base64 coded image in string format.
-  wa_profilepic(34605797764,<yourapikey>,"png","high") will return a response object that contains an image buffer on the payload
+  wa_profilepic(34605797764,<<yourapikey>>,"url","low") will return a response object
+  wa_profilepic(34605797764,<<yourapikey>>,"url","high").text will be the url in string format 
+  wa_profilepic(34605797764,<<yourapikey>>,"base64","high") will return a response object
+  wa_profilepic(34605797764,<<yourapikey>>,"base64","high").text will be the base64 coded image in string format.
+  wa_profilepic(34605797764,<<yourapikey>>,"png","high") will return a response object that contains an image buffer on the payload
 
 **wa_picobj(phone, apikey)**
 
