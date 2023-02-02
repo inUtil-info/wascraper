@@ -1,9 +1,12 @@
-This examples are using functions from the `wascraper` module to perform various operations related to WhatsApp account information.
+These examples are using functions from the `wascraper` module to perform various operations related to WhatsApp account information.
 
-The example.py file shows how to check if a phone number is registered, fetchs profile information, checks if an account is a business account, 
+
+#### example.py
+The code shows how to check if a phone number is registered, fetchs profile information, checks if an account is a business account, 
 gathers business information, fetchs profile picture URL and detects objects in a profile picture. 
 
-The example2.py file imports the cv2 and numpy libraries and uses the BytesIO and Image classes from the io and PIL libraries respectively. 
+#### example2.py
+The code imports the cv2 and numpy libraries and uses the BytesIO and Image classes from the io and PIL libraries respectively. 
 It uses the wa_profilepic and wa_picobj functions from the `wascraper` module to fetch the profile picture and detect objects in the profile 
 picture of a WhatsApp account associated with a phone number.
 
@@ -25,4 +28,4 @@ The code uses an API key to access the information, but you can customize it to 
 
 ---
 
-The descriptions provided are, as you guessed, from chatGPT  :)
+The descriptions you read above are, as you guessed, from chatGPT  :)
