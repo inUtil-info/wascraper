@@ -29,7 +29,6 @@ You are encouraged to test the service before moving to a paid subscription, use
    from  wascraper import *
 ```
    
-  
 
 
 ### About phone numbers
@@ -44,42 +43,45 @@ Remove hyphens, dashes and trim spaces before feeding phone numbers.
 
 ### Library functions & Endpoints
 
-`wa_registered(phone, apikey)`
+
+
+
+#### wa_registered(phone, apikey)
 
 This function will take `phone` number and `apikey` as input, and shall return a `true`or `flase` boolean response depending on whether the number is registered in the whatsapp network.
 
-`wa_about(phone, apikey)`
+#### wa_about(phone, apikey)
 
 This function will take `phone` number and `apikey` as input, and shall return a json object with the information the phone owner entered as 'status' or 'about' and when was this information added to owner's whatsapp profile.
 
 
-`wa_isbiz(phone, apikey)`
+#### wa_isbiz(phone, apikey)
 
 This function will take `phone` number and `apikey` as input, and shall return a `true` or `flase` boolean response depending on whether the number is registered as a business account.
 
-`wa_bizinfo(phone, apikey)`
+#### wa_bizinfo(phone, apikey)
 
 This function will take `phone` number and `apikey` as input and shall return a json object with the information the phone owner entered as business informatino details for the account like, e.g., opening hours, url, email, products...
 
-`wa_profilepic(phone, apikey,pictype="url", quality="high")`
+#### wa_profilepic(phone, apikey,pictype="url", quality="high")
 
 This function will take `phone` number and `apikey` as input, together with two optional parameters:
  - `pictype` choices are; `url`, `png` and `base64`. This will determine the data type the function will return.
  - `quality` choices are `high` and `low`, where `high` is the image the owner uploaded and `low` is the icon size format of the image.
 
-Calling examples:
+Usage examples:
 
-  wa_profilepic(34605797764,\<yourapikey\>,"url","low") will return a response object.
+  `wa_profilepic(34605797764,\<yourapikey\>,"url","low")` will return a response object.
   
-  wa_profilepic(34605797764,\<yourapikey\>,"url","high").text will be the url in string format .
+  `wa_profilepic(34605797764,\<yourapikey\>,"url","high").text` will be the url in string format .
   
-  wa_profilepic(34605797764,\<yourapikey\>,"base64","high") will return a response object.
+  `wa_profilepic(34605797764,\<yourapikey\>,"base64","high")` will return a response object.
   
-  wa_profilepic(34605797764,\<yourapikey\>,"base64","high").text will be the base64 coded image in string format.
+  `wa_profilepic(34605797764,\<yourapikey\>,"base64","high").text` will be the base64 coded image in string format.
   
-  wa_profilepic(34605797764,\<yourapikey\>,"png","high") will return a response object that contains an image buffer on the payload
+  `wa_profilepic(34605797764,\<yourapikey\>,"png","high")` will return a response object that contains an image buffer on the payload
 
-`wa_picobj(phone, apikey)`
+#### wa_picobj(phone, apikey)
 
 This function recieves the `phone` to scrap and your `apikey` and returs a json object listing the objects found in the profile picture of the whatsapp number
 The output will be a json object with the list of objects found with the following format:
