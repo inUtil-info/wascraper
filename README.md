@@ -46,24 +46,29 @@ Remove hyphens, dashes and trim spaces before feeding phone numbers.
 
 
 
-#### wa_registered(phone, apikey)
+#### is registered on whatsapp?
+`wa_registered(phone, apikey)`
 
 This function will take `phone` number and `apikey` as input, and shall return a `true`or `flase` boolean response depending on whether the number is registered in the whatsapp network.
 
-#### wa_about(phone, apikey)
+#### get whatsapp about info.
+`wa_about(phone, apikey)`
 
 This function will take `phone` number and `apikey` as input, and shall return a json object with the information the phone owner entered as 'status' or 'about' and when was this information added to owner's whatsapp profile.
 
 
-#### wa_isbiz(phone, apikey)
+#### is a whatsapp for business account?
+`wa_isbiz(phone, apikey)`
 
 This function will take `phone` number and `apikey` as input, and shall return a `true` or `flase` boolean response depending on whether the number is registered as a business account.
 
-#### wa_bizinfo(phone, apikey)
+#### get whatsapp for business info.
+`wa_bizinfo(phone, apikey)`
 
 This function will take `phone` number and `apikey` as input and shall return a json object with the information the phone owner entered as business informatino details for the account like, e.g., opening hours, url, email, products...
 
-#### wa_profilepic(phone, apikey,pictype="url", quality="high")
+#### fetch whatsapp profile picture.
+`wa_profilepic(phone, apikey,pictype="url", quality="high")`
 
 This function will take `phone` number and `apikey` as input, together with two optional parameters:
  - `pictype` choices are; `url`, `png` and `base64`. This will determine the data type the function will return.
@@ -81,7 +86,8 @@ Usage examples:
   
   `wa_profilepic(34605797764,\<yourapikey\>,"png","high")` will return a response object that contains an image buffer on the payload
 
-#### wa_picobj(phone, apikey)
+#### detect objects on whatsapp profile picture.
+`wa_picobj(phone, apikey)`
 
 This function recieves the `phone` to scrap and your `apikey` and returs a json object listing the objects found in the profile picture of the whatsapp number
 The output will be a json object with the list of objects found with the following format:
