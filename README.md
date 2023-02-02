@@ -29,7 +29,7 @@ You are encouraged to test the service before moving to a paid subscription, use
    from  wascraper import *
 ```
    
-
+---
 
 ### About phone numbers
 Please make sure you use the right format, as Whatsapp is expecting you include the country code without the + sign before it (e.g, 34605797764)
@@ -40,32 +40,11 @@ Remove hyphens, dashes and trim spaces before feeding phone numbers.
 (34) 34605797764
 34-605 797 764
 
+---
 
-### Library functions & Endpoints
+### Library functions
 
-
-
-
-#### is registered on whatsapp?
-`wa_registered(phone, apikey)`
-
-This function will take `phone` number and `apikey` as input, and shall return a `true`or `flase` boolean response depending on whether the number is registered in the whatsapp network.
-
-#### get whatsapp about info.
-`wa_about(phone, apikey)`
-
-This function will take `phone` number and `apikey` as input, and shall return a json object with the information the phone owner entered as 'status' or 'about' and when was this information added to owner's whatsapp profile.
-
-
-#### is a whatsapp for business account?
-`wa_isbiz(phone, apikey)`
-
-This function will take `phone` number and `apikey` as input, and shall return a `true` or `flase` boolean response depending on whether the number is registered as a business account.
-
-#### get whatsapp for business info.
-`wa_bizinfo(phone, apikey)`
-
-This function will take `phone` number and `apikey` as input and shall return a json object with the information the phone owner entered as business informatino details for the account like, e.g., opening hours, url, email, products...
+These are the functions implemented and how to use them:
 
 #### fetch whatsapp profile picture.
 `wa_profilepic(phone, apikey,pictype="url", quality="high")`
@@ -86,6 +65,7 @@ Usage examples:
   
   `wa_profilepic(34605797764,\<yourapikey\>,"png","high")` will return a response object that contains an image buffer on the payload
 
+
 #### detect objects on whatsapp profile picture.
 `wa_picobj(phone, apikey)`
 
@@ -96,6 +76,29 @@ The output will be a json object with the list of objects found with the followi
 [{object:"dog", confidence:99.56}, {object:"person", confidence:98.34}]
 ```
 
+
+#### is registered on whatsapp?
+`wa_registered(phone, apikey)`
+
+This function will take `phone` number and `apikey` as input, and shall return a `true`or `flase` boolean response depending on whether the number is registered in the whatsapp network.
+
+
+#### get whatsapp about info.
+`wa_about(phone, apikey)`
+
+This function will take `phone` number and `apikey` as input, and shall return a json object with the information the phone owner entered as 'status' or 'about' and when was this information added to owner's whatsapp profile.
+
+
+#### is a whatsapp for business account?
+`wa_isbiz(phone, apikey)`
+
+This function will take `phone` number and `apikey` as input, and shall return a `true` or `flase` boolean response depending on whether the number is registered as a business account.
+
+
+#### get whatsapp for business info.
+`wa_bizinfo(phone, apikey)`
+
+This function will take `phone` number and `apikey` as input and shall return a json object with the information the phone owner entered as business informatino details for the account like, e.g., opening hours, url, email, products...
 
 
 
